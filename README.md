@@ -1,108 +1,65 @@
 # Driver Drowsiness Detection System — Version 1
 
-An Arduino-based embedded prototype that uses an MPU6050 motion sensor to detect predefined head-tilt conditions and provide visual and audible alerts.
-
 ## Overview
 
-Driver Drowsiness Detection System — Version 1 is an embedded systems project developed to explore sensor interfacing, I²C communication, microcontroller-based signal processing, and alert control.
+Driver Drowsiness Detection System — Version 1 is an embedded systems prototype developed to explore sensor-based driver head-movement monitoring and warning indication.
 
-The system reads motion data from an MPU6050 accelerometer and gyroscope module using an Arduino Nano. The firmware evaluates sensor readings against predefined calibration values and a tilt threshold to trigger warning outputs.
+The system uses an Arduino Nano and an MPU6050 motion sensor to acquire movement data, process sensor readings, and activate visual and audible indicators based on predefined detection conditions.
 
 ## Objectives
 
-- Interface an MPU6050 motion sensor with an Arduino Nano using I²C.
-- Read and process accelerometer data.
-- Implement threshold-based head-tilt detection.
-- Control visual indicators and an audible alert using digital outputs.
-- Develop practical experience in embedded C/C++ firmware development and hardware–software integration.
+* Interface a motion sensor with a microcontroller using I2C.
+* Acquire and process sensor data for head-movement monitoring.
+* Implement embedded detection logic using Arduino firmware.
+* Integrate LED indicators and an active buzzer for warning outputs.
+* Practise hardware interfacing, firmware development, and system integration.
 
 ## Hardware Components
 
-| Component | Purpose |
-|---|---|
-| Arduino Nano (ATmega328P) | Microcontroller and firmware execution |
-| MPU6050 | Accelerometer and gyroscope measurements |
-| Green LED | Visual status indication |
-| Red LED | Visual warning indication |
-| Active buzzer | Audible alert |
-| Current-limiting resistors | LED current limiting |
-| Breadboard and jumper wires | Circuit assembly and interconnections |
+* Arduino Nano V3.0
+* MPU6050 accelerometer and gyroscope
+* Red and green LEDs
+* Current-limiting resistors
+* Active buzzer
+* Breadboard and jumper wires
 
 ## System Architecture
 
-```text
-Head Movement
-      ↓
-MPU6050 Motion Sensor
-      ↓
-I²C Communication
-      ↓
-Arduino Nano
-      ↓
-Sensor Data Processing
-      ↓
-Tilt-Threshold Evaluation
-      ↓
-LED Indicators + Buzzer
-```
+Head Movement → MPU6050 Sensor → I2C Communication → Arduino Nano → Detection Logic → LED Indicators and Buzzer
 
-## Software and Technologies
+## Working Principle
 
-- **Programming language:** Arduino C/C++
-- **Development environment:** Arduino IDE
-- **Microcontroller:** ATmega328P
-- **Sensor interface:** I²C
-- **Firmware concepts:** Sensor data acquisition, calibration values, threshold-based detection, digital output control
+The MPU6050 measures acceleration and angular velocity associated with head movement. The Arduino Nano reads the sensor data and evaluates it using the implemented detection logic. The output indicators provide visual and audible feedback when the configured warning condition is detected.
 
-## Firmware Configuration
+This project is a prototype for learning and experimentation. It is not a validated automotive safety system.
 
-The firmware includes the following initial configuration values:
+## Repository Structure
 
-| Parameter | Value |
-|---|---|
-| MPU6050 I²C address | `0x68` |
-| Serial communication baud rate | `9600` |
-| Green LED output pin | `D7` |
-| Red LED output pin | `D8` |
-| Buzzer output pin | `D9` |
-| Tilt threshold variable | `3000` |
+* `Codes/` — Firmware source code and development stages.
+* `Data/` — Project data and recorded observations.
+* `Hardware/` — Component information, setup images, and wiring diagrams.
+* `Notes/` — Development notes and implementation records.
+* `Versions/` — Saved firmware versions and experimental stages.
+* `Working video` — Video demonstrating the project and its operation.
 
-The firmware also contains calibration variables for the accelerometer readings. These values are implementation-specific and may require recalibration depending on sensor orientation and operating conditions.
+## Engineering Focus
 
-## Repository Contents
+* Embedded C/C++ firmware development
+* Microcontroller and sensor interfacing
+* I2C communication
+* Sensor-data acquisition
+* Embedded detection logic
+* Hardware–software integration
+* Debugging and iterative development
 
-- `n6_drowsiness_full_system_v1.ino` — Integrated Version 1 Arduino firmware.
+## Project Status
 
-Additional hardware documentation, wiring diagrams, development notes, and test evidence can be added as they are prepared and verified.
+Version 1 was developed as a working prototype to explore sensor-based head-movement detection and embedded warning outputs.
 
-## Engineering Scope
+## Future Scope
 
-This project demonstrates practical exposure to:
+Potential future improvements include more robust detection logic, additional testing, improved sensor calibration, and further evaluation of the system's limitations.
 
-- Microcontroller-based embedded firmware.
-- I²C sensor interfacing.
-- Accelerometer data acquisition.
-- Threshold-based detection logic.
-- Digital control of visual and audible indicators.
-- Hardware–software integration and prototype development.
+## Disclaimer
 
-These fundamentals are relevant to further learning in automotive embedded electronics, ECU development, firmware debugging, and embedded system validation.
-
-## Limitations
-
-- Detection is based on predefined motion-related conditions, not a validated measurement of driver fatigue.
-- Sensor calibration, mounting position, and movement can affect detection behaviour.
-- False-positive and false-negative performance has not been established through formal validation.
-- The prototype is not qualified for automotive production or safety-critical use.
-
-**This project is an educational embedded systems prototype and must not be relied upon as a driver-safety device.**
-
-## Future Development
-
-Potential future improvements include:
-
-- More robust sensor calibration and filtering.
-- Improved detection logic and timing validation.
-- Systematic testing under different movement conditions.
-- Documented test cases and measured results.
-- Further exploration of automotive embedded software and validation practices.
+This prototype is intended for educational and engineering development purposes. It has not been validated for production automotive use or as a reliable driver-safety device.
