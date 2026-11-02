@@ -1,0 +1,5 @@
+AccX: -2060 | AccY: -420 | AccZ: 17584
+AccX: -2112 | AccY: -352 | AccZ: 17692
+AccX: -2144 | AccY: -316 | AccZ: 17680
+AccX: -2036 | AccY: -356 | AccZ: 17816
+AccX: -2260 | AccY: -380 | AccZ: 17740
