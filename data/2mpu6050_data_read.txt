@@ -1,0 +1,5 @@
+AccX: -2216 | AccY: -428 | AccZ: 17508 || GyroX: -640 | GyroY: 270 | GyroZ: 115
+AccX: -2212 | AccY: -524 | AccZ: 17584 || GyroX: -656 | GyroY: 278 | GyroZ: 204
+AccX: -2296 | AccY: -448 | AccZ: 17644 || GyroX: -672 | GyroY: 270 | GyroZ: 205
+AccX: -2376 | AccY: -484 | AccZ: 17556 || GyroX: -624 | GyroY: 260 | GyroZ: 110
+AccX: -2528 | AccY: -448 | AccZ: 17732 || GyroX: -640 | GyroY: 289 | GyroZ: 192
