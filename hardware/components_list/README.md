@@ -1,4 +1,4 @@
-# Hardware Components List
+# Components List
 
 This directory contains the hardware component inventory used in the development of the Driver Drowsiness Detection System — Version 1.
 
