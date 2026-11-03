@@ -1,0 +1,8 @@
+Arduino Nano (ATmega328P, CH340, Type-C) | 1 | 5V | UART/I2C/SPI | Flyrobo  
+MPU6050 (Accelerometer + Gyroscope)      | 1 | 3.3–5V | I2C | Flyrobo  
+Active Buzzer                            | 1 | 5V | Digital | Flyrobo  
+LED (Red)                                | 1 | ~2V | Digital | Flyrobo  
+LED (Green)                              | 1 | ~2V | Digital | Flyrobo  
+Resistor 220Ω                            | 2 | - | Passive | Flyrobo  
+Breadboard                               | 1 | - | Prototyping | Flyrobo  
+Jumper Wires (Male-Male)                 | ~10 | - | Interconnect | Flyrobo 
