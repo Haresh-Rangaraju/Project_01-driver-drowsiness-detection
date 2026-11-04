@@ -1,0 +1,41 @@
+Day 1: Arduino Setup & Blink Test
+
+Objective:
+To set up Arduino environment and verify microcontroller operation using LED blink.
+
+Setup Done:
+- Installed Arduino IDE
+- Installed CH340 driver for Arduino Nano
+- Connected Arduino Nano using USB Type-C cable
+- Verified COM port detection in Device Manager
+
+Hardware Used:
+- Arduino Nano (ATmega328P)
+- USB Type-C data cable
+
+Code Executed:
+- Basic LED Blink program using pin 13
+
+Observations:
+- Code compiled and uploaded successfully
+- Onboard LED blinked at 1-second interval
+- No hardware issues observed
+
+Understanding:
+- setup() runs once for initialization
+- loop() runs continuously
+- pinMode() configures pin as OUTPUT
+- digitalWrite() controls HIGH/LOW signal
+- delay() controls timing
+
+Issues Faced:
+- Initial upload error due to processor setting
+- Fixed by selecting “ATmega328P (Old Bootloader)”
+
+Learning:
+- Verified Arduino working condition
+- Understood basic program structure
+- Learned importance of correct board and processor selection
+
+Conclusion:
+Arduino Nano successfully set up and tested. Ready for sensor interfacing.
