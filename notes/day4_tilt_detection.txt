@@ -1,0 +1,42 @@
+Day 4: Head Tilt Detection with Calibration
+
+Objective:
+To detect head tilt using accelerometer data with improved accuracy.
+
+Procedure:
+- Collected baseline data by keeping sensor flat
+- Observed normal value ranges
+- Selected threshold based on real data
+- Implemented tilt detection logic using deviation
+
+Calibration:
+- AccX ≈ -300
+- AccY ≈ 300
+- AccZ ≈ 18000
+- Threshold = 3000
+
+Detection Logic:
+IF |AccX - baseX| > threshold OR |AccY - baseY| > threshold
+→ Tilt detected
+
+Observation:
+- LED OFF when sensor is flat
+- LED ON when tilted significantly
+- Small movements did not trigger alert
+
+Understanding:
+- Calibration improves detection accuracy
+- Threshold selection is critical
+- Real-world data varies slightly (noise)
+
+Issues Faced:
+- Initial threshold too high
+- Fixed using real data analysis
+
+Learning:
+- Importance of calibration
+- Difference between raw detection and accurate detection
+- Practical implementation of threshold logic
+
+Conclusion:
+Successfully implemented calibrated tilt detection with improved accuracy and reduced false triggers.
