@@ -1,0 +1,29 @@
+Day 6: Full System Integration
+
+Objective:
+To combine sensor, logic, and alert system.
+
+Added:
+- Green LED (Normal)
+- Red LED (Warning)
+- Buzzer (Alert)
+
+Green LED (Normal Indicator)
+Arduino Pin 7 → Resistor (220Ω) → LED (+ long leg)
+LED (– short leg) → GND
+
+Red LED (Warning Indicator)
+Arduino Pin 8 → Resistor (220Ω) → LED (+ long leg)
+LED (– short leg) → GND
+
+Active Buzzer
+Arduino Pin 9 → Buzzer (+)
+Buzzer (–) → GND
+
+Result:
+System successfully detects drowsiness and alerts user.
+
+Learning:
+- System integration is more complex than individual modules
+- Importance of correct grounding
+- Debugging hardware connections
