@@ -1,0 +1,50 @@
+Day 2: MPU6050 Sensor Interfacing & I2C Detection
+
+Objective:
+To interface MPU6050 sensor with Arduino Nano and verify communication using I2C protocol.
+
+Hardware Used:
+- Arduino Nano (ATmega328P)
+- MPU6050 Sensor Module
+- Breadboard
+- Jumper wires
+
+Connections:
+- VCC → 5V
+- GND → GND
+- SDA → A4
+- SCL → A5
+
+Concept:
+- MPU6050 communicates using I2C protocol
+- Each I2C device has a unique address
+- Arduino acts as master and MPU6050 as slave
+
+Procedure:
+- Connected sensor to Arduino using I2C pins
+- Uploaded I2C scanner code
+- Opened Serial Monitor to check device response
+
+Observation:
+- Device detected at address: 0x68
+- Continuous detection confirmed stable communication
+- Sensor successfully responding to I2C requests
+
+Understanding:
+- I2C uses two lines: SDA (data) and SCL (clock)
+- Address 0x68 is default for MPU6050
+- setup() runs once, loop() runs continuously
+- Serial monitor may miss initial setup prints
+
+Issues Faced:
+- “I2C Scanner” message not visible initially
+- Reason: Serial Monitor opened after setup execution
+- Solution: Pressed reset to view full output
+
+Learning:
+- Successfully established I2C communication
+- Understood master-slave communication concept
+- Learned debugging using Serial Monitor
+
+Conclusion:
+MPU6050 successfully interfaced and detected using I2C protocol. Ready for real-time data acquisition.
