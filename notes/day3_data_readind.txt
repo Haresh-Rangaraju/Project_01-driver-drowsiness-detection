@@ -1,0 +1,33 @@
+Day 3: MPU6050 Data Reading
+
+Objective:
+To read real-time accelerometer and gyroscope data from MPU6050 sensor.
+
+Procedure:
+- Initialized MPU6050 by disabling sleep mode
+- Requested sensor data using I2C communication
+- Read 14 bytes of data (accelerometer + gyroscope)
+- Displayed values on Serial Monitor
+
+Observation:
+- AccX, AccY, AccZ values obtained
+- GyroX, GyroY, GyroZ values obtained
+- Values change when sensor is moved or tilted
+
+Understanding:
+- Accelerometer measures tilt and gravity
+- Gyroscope measures angular rotation
+- AccZ is high (~18000) when sensor is flat
+- AccX and AccY change when sensor is tilted
+
+Issues Faced:
+- Some extreme values observed during sudden movement
+- Identified as sensor limits (normal behavior)
+
+Learning:
+- Understood raw sensor data format
+- Learned how to combine two bytes into 16-bit data
+- Established real-time data acquisition
+
+Conclusion:
+Successfully obtained real-time motion data from MPU6050, forming the base for tilt detection.
