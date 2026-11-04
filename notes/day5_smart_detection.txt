@@ -1,0 +1,41 @@
+Day 5: Time-Based Smart Drowsiness Detection
+
+Objective:
+To improve drowsiness detection by considering duration of head tilt.
+
+Procedure:
+- Observed that short movements caused false alerts
+- Introduced time-based condition using millis()
+- Measured duration of tilt
+- Triggered alert only if tilt persists
+
+Detection Logic:
+IF tilt detected AND duration > 2000 ms
+→ Driver is drowsy
+
+Implementation:
+- Used millis() for time tracking
+- Stored tilt start time
+- Compared current time with start time
+
+Observation:
+- Short tilt did not trigger alert
+- Long tilt (>2 seconds) triggered alert
+- System behaved more realistically
+
+Understanding:
+- Time filtering reduces false positives
+- Real-world systems require behavior analysis
+- Duration is key factor in drowsiness detection
+
+Issues Faced:
+- Initial immediate detection caused false alerts
+- Fixed using time-based logic
+
+Learning:
+- Importance of time in embedded systems
+- Use of millis() for non-blocking timing
+- Designing real-world logic instead of simple conditions
+
+Conclusion:
+Successfully implemented smart drowsiness detection using time-based logic, significantly improving system reliability.
